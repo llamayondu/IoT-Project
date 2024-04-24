@@ -84,7 +84,7 @@
         <div class="graph-container">
             <h2>Graph 3</h2>
             <div class="graph" id="graph3">
-                <img src="{{ url_for('static', filename='images/field3_plot.png') }}", alt="Graph 3">
+                <img src="{{ url_for('static', filename='images/field3_plot.png') }}", alt="Graph 3", width="40px">
                 <!-- Your graph 3 content here -->
             </div>
         </div>
@@ -109,7 +109,7 @@
     </div>
 
     <div class="controls">
-        <form action="{{ url_for('on') }}", method="post">
+        <form action="{{ url_for('switch_on_ac') }}", method="post">
             <button id="ac-on">AC On</button>
         </form>
         <button id="ac-off">AC Off</button>

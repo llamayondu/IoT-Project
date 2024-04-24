@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, flash
+from flask import Flask, render_template, redirect, url_for
 from graph2image import fetch_plots
 import execute
 
@@ -15,7 +15,7 @@ def home():
 def switch_on_ac():
     print(f"{execute.talkback_id=}, {execute.key=}\n")
     execute.execute(execute.talkback_id, execute.key, 'turn_on')
-    return
+    return redirect(url_for("home"));
     # return redirect(url_for("/"));
 
 if __name__ == '__main__':
