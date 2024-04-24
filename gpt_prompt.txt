@@ -1,0 +1,27 @@
+can you write me a script to make a ppt for an internet of Things project that we have made. Here is the content of the same:
+
+1st slide:
+Hello/welcome slide, please improvise.
+
+2nd slide:
+Hardware rwquirements:
+sensors used are
+1. DHT11 sensors
+write some placeholder text for about 3 more sensors and a couple of actuators
+
+3rd slide:
+Softwate stack used:
+we have used arduino IDE and, flask and REST API
+
+4th slide:
+Usage of the Ultrasound and Infrared sensors to count the number of people in the room at any given time
+
+5th:
+Usage of servo motors to switch on and off the switches for ac's and heaters
+
+6th:
+Problems we faced:
+write some stuff about connecting wires, integrating flask and REST API, calibrating sennsors and collecting data and some random placeholder text
+
+7th:
+thank you slide

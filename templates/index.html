@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .graph-container {
+        width: 45%;
+        min-width: 300px;
+        margin-bottom: 20px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .graph {
+        height: 200px; /* Adjust height as needed */
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 18px;
+        color: #333;
+    }
+
+    .controls {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .controls button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .controls button:hover {
+        background-color: #0056b3;
+        opacity: 0.8; /* Slightly reduce opacity on hover */
+    }
+</style>
+
+<body>
+    <h1 style="text-align: center;">Personalized Climate Control System</h1> <!-- New heading added -->
+    <div class="dashboard">
+        <div class="graph-container">
+            <h2>Graph 1</h2>
+            <div class="graph" id="graph1">
+                <!-- Your graph 1 content here -->
+            </div>
+        </div>
+        <div class="graph-container">
+            <h2>Graph 2</h2>
+            <div class="graph" id="graph2">
+                <!-- Your graph 2 content here -->
+            </div>
+        </div>
+        <div class="graph-container">
+            <h2>Graph 3</h2>
+            <div class="graph" id="graph3">
+                <!-- Your graph 3 content here -->
+            </div>
+        </div>
+        <div class="graph-container">
+            <h2>Graph 4</h2>
+            <div class="graph" id="graph4">
+                <!-- Your graph 4 content here -->
+            </div>
+        </div>
+        <div class="graph-container">
+            <h2>Graph 5</h2>
+            <div class="graph" id="graph5">
+                <!-- Your graph 5 content here -->
+            </div>
+        </div>
+        <div class="graph-container">
+            <h2>Graph 6</h2>
+            <div class="graph" id="graph6">
+                <!-- Your graph 6 content here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="ac-on">AC On</button>
+        <button id="ac-off">AC Off</button>
+        <button id="cooler-on">Cooler On</button>
+        <button id="cooler-off">Cooler Off</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
