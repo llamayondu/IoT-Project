@@ -115,7 +115,9 @@
         <form action="{{ url_for('switch_on_ac') }}", method="post">
             <button id="ac-on">AC On</button>
         </form>
-        <button id="ac-off">AC Off</button>
+        <form action="{{ url_for('switch_off_ac') }}", method="post">
+            <button id="ac-off">AC Off</button>
+        </form>
         <button id="cooler-on">Cooler On</button>
         <button id="cooler-off">Cooler Off</button>
     </div>
