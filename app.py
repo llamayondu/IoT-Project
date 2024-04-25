@@ -14,8 +14,8 @@ def home():
 @app.route('/on', methods=["POST"])
 def switch_on_ac():
     print(f"{execute.talkback_id=}, {execute.key=}\n")
-    execute.execute(execute.talkback_id, execute.key, 'turn_on')
-    return redirect(url_for("home"));
+    execute.execute(execute.talkback_id, execute.key, 'TURN_ON') #ADDS TURN ON COMMAND TO THE QUEUE
+    return redirect(url_for("home"))
     # return redirect(url_for("/"));
 
 if __name__ == '__main__':

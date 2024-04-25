@@ -8,8 +8,8 @@ turn_off='41161933'
 
 def execute(talkback_id,api_key,command_string):
     command_id = requests.post('https://api.thingspeak.com/talkbacks/52131/commands',params={'api_key':'RJUI9PUKJTWMP7ZB','command_string':command_string})
-    form = requests.post(f'https://api.thingspeak.com/talkbacks/{talkback_id}/commands/execute.json',params={'api_key':api_key})
-    print(form.text)
+    # form = requests.post(f'https://api.thingspeak.com/talkbacks/{talkback_id}/commands/execute.json',params={'api_key':api_key})
+    # print(form.text)
     # details of executed command
 
 #example:
